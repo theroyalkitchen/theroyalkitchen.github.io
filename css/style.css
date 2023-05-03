@@ -1,0 +1,265 @@
+@font-face {
+    font-family: NotoSerif;
+    src: url(./fonts/NotoSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+    background-color: #1a1a1a;
+    text-align: center;
+    font-family: Montserrat;
+}
+
+img {
+    width: 100%;
+}
+
+.logo {
+    width: 80%;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.header {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, #000000 80%, #1a1a1a 100%);
+    ;
+}
+
+.navbar {
+    margin: auto;
+    justify-content: center;
+}
+
+.header .nav-link {
+    font-size: 1.2rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.carousel-inner {
+    max-height: calc(70vh) !important;
+}
+
+.carousel-caption {
+    font-family: Montserrat, sans-serif;
+    font-size: 3.2vw;
+    text-align: left;
+    max-width: 50%;
+    bottom: auto;
+}
+
+
+.first-caption {
+    top: 30%;
+    left: 5%;
+}
+
+.second-caption {
+    top: 20%;
+    left: 5%;
+}
+
+.third-caption,
+.fourth-caption {
+    top: 25%;
+    left: 25%;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(226 224 225 / 20%);
+    color: #000;
+}
+
+.nav-link {
+    font-family: NotoSerif, sans-serif;
+}
+
+
+h1,
+h2,
+h3,
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus {
+    font-family: NotoSerif, sans-serif;
+    color: #f9f49f;
+    background: -webkit-linear-gradient(180deg, #94662f, #f9f49f, #94662f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    text-decoration: underline;
+
+}
+
+h1,
+h2,
+h3 {
+    padding: 5px 15px;
+    width: auto;
+    display: inline;
+}
+
+.snacks,
+.chaats,
+.desserts,
+.main-course,
+.special-dishes,
+.royal-dishes {
+    padding: 30px 0px;
+}
+
+
+.chaat-items {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: center;
+}
+
+.chat-item {
+    width: 200PX;
+    height: 200PX;
+    margin: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.chat-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.chat-item-description {
+    position: absolute;
+    top: 0px;
+    padding: 5px;
+    width: 100%;
+    text-align: left;
+    background: #3b3b3b9c;
+    text-transform: uppercase;
+}
+
+.chat-item-price {
+    text-align: right;
+}
+
+.snacks-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.snacks-items {}
+
+.snacks-item {
+    text-transform: uppercase;
+    text-align: left;
+    padding-top: 3px;
+}
+
+.main-course img,
+.royal-dishes img {
+    max-width: 600px;
+    border-radius: 50px;
+}
+
+
+.desserts img {
+    max-width: 350px;
+    border-radius: 50px;
+}
+
+.desserts-item h3,
+.royal-dishes h3 {
+    text-transform: none !important;
+    border: none;
+    font-size: 3.4em;
+    padding: 0px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.dessert-description {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    vertical-align: bottom;
+}
+
+.dessert-description * {
+
+    margin-top: auto;
+}
+
+.desserts-item {
+    margin-bottom: 50px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.main-course,
+.desserts {
+    background-color: #151515;
+}
+
+.special-dishes img {
+    max-width: 350px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.royal-dishes {
+    background-color: #ccad77;
+    color: #000000;
+}
+
+.royal-dishes h1,
+.royal-dishes h2,
+.royal-dishes h3 {
+    color: #000000;
+    background: #000000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+footer {
+    padding: 20px 0px;
+    background-color: #000;
+}
+.whatsappbtn{
+    background-image: url(../images/whatsapp.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    position: fixed;
+    border-radius: 25px;
+    bottom: 20px;
+    right: 20px;
+    animation: whatsappbtnanimate 5s infinite;
+}
+@keyframes whatsappbtnanimate {
+    50% {box-shadow: 0px 0px 10px 5px #838383;}
+  }
