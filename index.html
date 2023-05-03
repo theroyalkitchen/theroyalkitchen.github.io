@@ -43,7 +43,7 @@
         </nav>
     </header>
     <section>
-        <div class="carousel slide" data-bs-ride="carousel">
+        <div id="banner" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="./images/main-banner-bg.jpg" class="d-block w-100"
@@ -71,6 +71,12 @@
                     </div>
                 </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#banner" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#banner" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              </button>
         </div>
     </section>
     <section id="chaats" class="chaats">
@@ -196,7 +202,7 @@
     </section>
     <footer>
         <h5>CONTACT US</h5>
-        <h6>CALLE LAGO CONSTANZA, N34, MADRID.</h6>
+        <h6>CALLE LAGO CONSTANZA, MADRID</h6>
     </footer>
     <a href="https://api.whatsapp.com/send?phone=+34627914749&text=Hello%20Royal%20Kitchen!" target="_blank" class="whatsappbtn"></a>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -216,7 +222,7 @@
         },
         {
             name: "Dabeli",
-            img: './images/dabeli.webp',
+            img: './images/Dabeli.webp',
             price: 10
         },
         {
@@ -236,7 +242,7 @@
         },
         {
             name: "Cutlet",
-            img: './images/cutlet.jpg',
+            img: './images/Cutlet.jpg',
             price: 10
         },
         {
@@ -261,12 +267,12 @@
         },
         {
             name: "Batata Vada",
-            img: './images/Batata-vada.jpg',
+            img: './images/batata-vada.jpg',
             price: 10
         },
         {
             name: "Manchurian",
-            img: './images/manchurian.jpg',
+            img: './images/Manchurian.jpg',
             price: 10
         },
         {
@@ -503,9 +509,8 @@
             let $northCurries = $(".main-course-north-indian-items");
             northCurries.forEach(item => {
                 $northCurries.append(`<div class="row snacks-item">
-                            <div class="col-7">${item.name}</div>
-                            <div class="col"></div>
-                            <div class="col-md-2">
+                            <div class="col-md-7 col-sm-8 col-8">${item.name}</div>                            
+                            <div class="col-md-5 col-sm-4 col-4 text-right">
                                 $ ${item.price}
                             </div>
                         </div>`);
@@ -514,9 +519,8 @@
             let $southFeasts = $(".main-course-south-indian-items");
             southFeasts.forEach(item => {
                 $southFeasts.append(`<div class="row snacks-item">
-                            <div class="col-7">${item.name}</div>
-                            <div class="col"></div>
-                            <div class="col-md-2">
+                            <div class="col-md-7 col-sm-8 col-8">${item.name}</div>
+                            <div class="col-md-5 col-sm-4 col-4 text-right">
                                 $ ${item.price}
                             </div>
                         </div>`);
@@ -525,9 +529,8 @@
             let $specialDishes = $(".special-items");
             specialDishes.forEach(item => {
                 $specialDishes.append(`<div class="row snacks-item">
-                            <div class="col-7">${item.name}</div>
-                            <div class="col"></div>
-                            <div class="col-md-2">
+                            <div class="col-md-7 col-sm-8 col-8">${item.name}</div>
+                            <div class="col-md-5 col-sm-4 col-4 text-right">
                                 $ ${item.price}
                             </div>
                         </div>`);
@@ -572,9 +575,8 @@
             let $snacksItems = $(".snacks-items");
             snacks.forEach(item => {
                 $snacksItems.append(`<div class="row snacks-item">
-                            <div class="col">${item.name}</div>
-                            <div class="col"></div>
-                            <div class="col-md-2">
+                            <div class="col-md-7 col-sm-8 col-8">${item.name}</div>
+                            <div class="col-md-5 col-sm-4 col-4 text-right">
                                 $ ${item.price}
                             </div>
                         </div>`);

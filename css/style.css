@@ -25,13 +25,12 @@ img {
 .logo {
     width: 80%;
     max-width: 500px;
-    margin-top: 20px;
 }
 
 .header {
     background: rgb(0, 0, 0);
     background: linear-gradient(180deg, #000000 80%, #1a1a1a 100%);
-    ;
+    padding: 10px 0px;
 }
 
 .navbar {
@@ -134,6 +133,13 @@ h3 {
     overflow: hidden;
     position: relative;
 }
+
+@media (max-width:481px)  { 
+    .chat-item {
+        width: 150PX;
+        height: 150PX;     
+    }
+ }
 
 .chat-item img {
     width: 100%;
