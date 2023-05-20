@@ -36,7 +36,7 @@
                     <a class="nav-link" aria-current="page" href="#snacks">Snacks</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#snacks">Place Order</a>
+                    <a class="nav-link" target="_blank" aria-current="page" href="https://api.whatsapp.com/send?phone=+34627914749&text=Hello%20Royal%20Kitchen!">Place Order</a>
                 </li>
                 <!-- WE HAVE PRESERVED THE TRUE INDIAN FLAVOR IN OUR CUISINES! -->
             </ul>
@@ -105,7 +105,7 @@
                 <div class="col-md-6">
                     <img src="./images/north-indian.webp">
                 </div>
-                <div class="col-md-6 text-left">
+                <div class="col-md-6 text-left mt-sm-20">
                     <h4>NORTH INDIAN CURRIES</h4>
                     <div class="main-course-north-indian-items">
                     </div>
@@ -117,7 +117,7 @@
                     <div class="main-course-south-indian-items">
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mt-sm-20">
                     <img src="./images/south-indian.jpg">
                 </div>
             </div>
@@ -134,7 +134,7 @@
                 <div class="col-md-6">
                     <img src="./images/special-dishes.jpg">
                 </div>
-                <div class="col-md-6 text-left">
+                <div class="col-md-6 text-left mt-sm-20">
                     <div class="special-items">
                     </div>
                 </div>
@@ -152,15 +152,15 @@
                 <div class="col-md-6">
                     <img src="./images/ras-puri.jpg">
                     <div class="dessert-description mt-20">
-                        <h4>Mango Ras, Puri, Curry, Farsan, Rice, Dal</h4>
-                        <h3>€10</h3>
+                        <h4>Mango Ras, Puri, Curry, Farsan, Rice, Dal, Butter Milk</h4>
+                        <h3>€45</h3>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6  mt-sm-20">
                     <img src="./images/shrikhand-puri.webp">
                     <div class="dessert-description mt-20">
-                        <h4>Mango Ras, Puri, Curry, Farsan, Rice, Dal</h4>
-                        <h3>€10</h3>
+                        <h4>Shrikhand, Puri, Curry, Farsan, Rice, Dal, Butter Milk</h4>
+                        <h3>€40</h3>
                     </div>
                 </div>
             </div>
@@ -211,30 +211,30 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script type="text/javascript">
         var chaats = [{
-            name: "Punjabi Samosa",
+            name: "Punjabi Samosa (3pcs)",
             img: './images/punjabi-samosa.webp',
             price: 10
         },
         {
-            name: "Surati/Dryfruit Samosa",
+            name: "Surati/Dryfruit Samosa (10pcs)",
             img: './images/surati-samosa.webp',
             price: 10
         },
         {
-            name: "Dabeli",
+            name: "Dabeli (2pcs)",
             img: './images/Dabeli.webp',
             price: 10
         },
         {
-            name: "Bombay Vadapav",
+            name: "Bombay Vadapav (2pcs)",
             img: './images/vadapav.jpg',
             price: 10
         },
-        {
-            name: "Bombay Misal Pav",
-            img: './images/misal-pav.jpg',
-            price: 10
-        },
+        // {
+        //     name: "Bombay Misal Pav",
+        //     img: './images/misal-pav.jpg',
+        //     price: 10
+        // },
         {
             name: "Ragda Pattice",
             img: './images/Ragda-Pattice.jpg',
@@ -243,43 +243,43 @@
         {
             name: "Cutlet",
             img: './images/Cutlet.jpg',
-            price: 10
+            price: 12
         },
         {
             name: "Mix Pakora",
             img: './images/mix-pakora.jpg',
-            price: 10
+            price: 12
         },
         {
             name: "Sabudana Pakora",
             img: './images/sabudana-pakora.jpg',
-            price: 10
+            price: 12
         },
         {
             name: "Bread Pakora",
             img: './images/bread-pakora.webp',
-            price: 10
+            price: 12
         },
         {
             name: "Chilly/Mirchy Pakora",
             img: './images/chilly-pakora.jpg',
-            price: 10
+            price: 12
         },
         {
             name: "Batata Vada",
             img: './images/batata-vada.jpg',
-            price: 10
+            price: 12
         },
         {
-            name: "Manchurian",
+            name: "Veg Manchurian",
             img: './images/Manchurian.jpg',
             price: 10
         },
-        {
-            name: "Veg Noodles",
-            img: './images/veg-noodles.webp',
-            price: 10
-        },
+        // {
+        //     name: "Veg Noodles",
+        //     img: './images/veg-noodles.webp',
+        //     price: 8
+        // },
         {
             name: "Veg Cryspy",
             img: './images/veg-cryspy.jpg',
@@ -288,72 +288,72 @@
 
         var northCurries = [{
             name: "Palak Panner",
-            price: 10
+            price: 12
         },
         {
             name: "Panner Masala",
-            price: 10
+            price: 12
         },
         {
             name: "Panner Butter Masala",
-            price: 10
+            price: 12
         },
         {
             name: "Panner Cheese Butter Masala",
-            price: 10
+            price: 12
         },
         {
             name: "Panner Bhurji",
-            price: 10
-        },
-        {
-            name: "Kaju Masala",
-            price: 10
-        },
-        {
-            name: "Kaju Paneer Masala",
-            price: 10
-        },
-        {
-            name: "Kaju Kari",
-            price: 10
-        },
+            price: 12
+        },        
         {
             name: "Mix Vegetable Gravy",
-            price: 10
+            price: 12
         },
         {
             name: "Paneer Corn Capsicum Masala",
-            price: 10
+            price: 12
+        },
+        {
+            name: "Kaju Masala",
+            price: 15
+        },
+        {
+            name: "Kaju Paneer Masala",
+            price: 15
+        },
+        {
+            name: "Kaju Kari",
+            price: 15
         }];
 
         var southFeasts = [{
             name: "Idli Sambar",
-            price: 10
+            price: 8
         },
-        {
-            name: "Mendu Vada",
-            price: 10
-        },
+        // {
+        //     name: "Mendu Vada",
+        //     price: 10
+        // },
         {
             name: "Plain Dosa",
-            price: 10
+            price: 4
         },
         {
             name: "Masala Dosa",
-            price: 10
+            price: 6
         },
         {
             name: "Mysore Dosa",
             price: 10
         },
-        {
-            name: "Onion Dosa",
-            price: 10
-        },
+        // {
+        //     name: "Onion Dosa",
+        //     price: 8
+        // },
         {
             name: "Cheese Dosa",
-            price: 10
+            price: 8
         },
         {
             name: "Jini Dosa",
@@ -361,28 +361,28 @@
         },
         {
             name: "Rava (Soji) Dosa",
-            price: 10
+            price: 8
         },
         {
             name: "Plain Uttapam",
-            price: 10
+            price: 5
         },
         {
             name: "Onion Uttapam",
-            price: 10
+            price: 5
         },
         {
             name: "Cheese Uttapam",
-            price: 10
+            price: 5
         },
         {
             name: "Mix Vegetable Uttapam",
-            price: 10
+            price: 5
         }];
 
         var specialDishes = [{
             name: "Chole Bhature",
-            price: 10
+            price: 12
         },
         {
             name: "Pav Bhaji",
@@ -393,31 +393,31 @@
             price: 10
         },
         {
-            name: "Aloo Paratha",
+            name: "Aloo Paratha (2pcs)",
+            price: 8
+        },
+        {
+            name: "Gobi Paratha (2pcs)",
+            price: 8
+        },
+        {
+            name: "Onion Paratha (2pcs)",
+            price: 8
+        },
+        {
+            name: "Cheese Paratha (2pcs)",
             price: 10
         },
         {
-            name: "Gobi Paratha",
+            name: "Paneer Paratha (2pcs)",
             price: 10
         },
         {
-            name: "Onion Paratha",
+            name: "Veg Mix Paratha (2pcs)",
             price: 10
         },
         {
-            name: "Cheese Paratha",
-            price: 10
-        },
-        {
-            name: "Paneer Paratha",
-            price: 10
-        },
-        {
-            name: "Veg Mix Paratha",
-            price: 10
-        },
-        {
-            name: "Methi Paratha (Thepla)",
+            name: "Methi Paratha (Thepla) (5pcs)",
             price: 10
         }];
 
@@ -542,11 +542,11 @@
             let i = 0;
             desserts.forEach(item => {
                 if (i % 2 == 0) {
-                    $dessertItems.append(`<div class="row desserts-item">
+                    $dessertItems.append(`<div class="row desserts-item mt-sm-20 ">
                             <div class="col-md-6">
                                 <img src="${item.img}" alt="${item.name}">
                             </div>                            
-                            <div class="col-md-6 dessert-description text-left">
+                            <div class="col-md-6 dessert-description mt-sm-20 text-left text-xs-center">
                                 <div>
                                     <h3>€${item.price}</h3>
                                     <h4>${item.name}</h4>
@@ -557,14 +557,14 @@
                 }
                 else {
                     $dessertItems.append(`<div class="row desserts-item">
-                            <div class="col-md-6 dessert-description text-right">
+                            <div class="col-md-6 dessert-description text-right text-xs-center">
                                 <div>
                                     <h3>€${item.price}</h3>
                                     <h4>${item.name}</h4>
                                     <p>${item.description}</p> 
                                 </div>                               
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 mt-sm-20">
                                 <img src="${item.img}" alt="${item.name}">
                             </div>                                                        
                         </div>`);
