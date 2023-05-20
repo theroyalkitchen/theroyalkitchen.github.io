@@ -66,12 +66,12 @@ img {
 
 .first-caption {
     top: 30%;
-    left: 5%;
+    left: 10%;
 }
 
 .second-caption {
     top: 20%;
-    left: 5%;
+    left: 10%;
 }
 
 @media (max-width:481px)  { 
