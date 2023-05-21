@@ -4,8 +4,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="XXXXXXXXXX">
-    <meta name="description" content="">
+    <meta name="keywords" content="The Royal Kitchen, Indian Food, Spicy Food, Taste Food in Madrid, Home Food">
+    <meta name="description" content="Home made food delivered, Fresh and Taste Food, Hygenic Food">
     <title>THE ROYAL KITCHEN</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -27,7 +27,7 @@
                     <a class="nav-link" aria-current="page" href="#special-dishes">Special Dishes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#Royal-dishes">Royal Dishes</a>
+                    <a class="nav-link" aria-current="page" href="#Royal-dishes">The Royal Dishes</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="#desserts">Desserts</a>
@@ -36,7 +36,9 @@
                     <a class="nav-link" aria-current="page" href="#snacks">Snacks</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" target="_blank" aria-current="page" href="https://api.whatsapp.com/send?phone=+34627914749&text=Hello%20Royal%20Kitchen!">Place Order</a>
+                    <a class="nav-link" target="_blank" aria-current="page"
+                        href="https://api.whatsapp.com/send?phone=+34604904902&text=Hello%20Royal%20Kitchen!">Place
+                        Order</a>
                 </li>
                 <!-- WE HAVE PRESERVED THE TRUE INDIAN FLAVOR IN OUR CUISINES! -->
             </ul>
@@ -73,10 +75,10 @@
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#banner" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#banner" data-bs-slide="next">
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#banner" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              </button>
+            </button>
         </div>
     </section>
     <section id="chaats" class="chaats">
@@ -144,7 +146,7 @@
     <section id="royal-dishes" class="royal-dishes">
         <div>
             <h1>
-                Royal Dishes
+                The Royal Dishes
             </h1>
         </div>
         <div class="container snacks-container">
@@ -204,12 +206,90 @@
         <h5>CONTACT US</h5>
         <h6>CALLE LAGO CONSTANZA, MADRID</h6>
     </footer>
-    <a href="https://api.whatsapp.com/send?phone=+34627914749&text=Hello%20Royal%20Kitchen!" target="_blank" class="whatsappbtn"></a>
+    <a href="https://api.whatsapp.com/send?phone=+34604904902&text=Hello%20Royal%20Kitchen!" target="_blank"
+        class="whatsappbtn"></a>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script type="text/javascript">
+        let domainName = window.location.hostname;
+        let richTextContent = {
+            "@context": "http://www.schema.org",
+            "@type": "FoodEstablishment",
+            "name": "The Royal Kitchen",
+            "url": "https://theroyalkitchen.github.io/",
+            "logo": "https://theroyalkitchen.github.io/images/logo.png",
+            "priceRange": "$$",
+            "description": "Savor the taste of Royal Indian Recipies. We deliver home made food at your home OR we also host family for their happy family events.",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Calle Lago Constanza",
+                "addressLocality": "Madrid",
+                "addressRegion": "Madrid",
+                "postalCode": "28017",
+                "addressCountry": "Spain"
+            },
+            "openingHours": "Mo 08:00-22:00 Tu 08:00-22:00 We 08:00-22:00 Th 08:00-22:00 Fr 08:00-22:00 Sa 08:00-22:00 Su 08:00-22:00",
+            "telephone": "+34604904902",
+            "servesCuisine": [
+                "Indian cuisine"
+            ],
+            "hasMenu": {
+                "@type": "Menu",
+                "name": "Menu",
+                "description": "Menu for in-restaurant dining only.",
+                "hasMenuSection": [{
+                    "@type": "MenuSection",
+                    "name": `THE ROYAL DISHES`,
+                    "description": "Indian Chaats, Starters",
+                    "hasMenuItem": {
+                        "@type": "MenuItem",
+                        "name": `Mango Ras, Puri, Curry, Farsan, Rice, Dal, Butter Milk`,
+                        "image": `${domainName}/images/ras-puri.jpg`,
+                        "offers": {
+                            "@type": "Offer",
+                            "price": `45`,
+                            "priceCurrency": "EUR"
+                        }
+                    }
+                }, 
+                {
+                    "@type": "MenuSection",
+                    "name": `THE ROYAL DISHES`,
+                    "description": "Indian Chaats, Starters",
+                    "hasMenuItem": {
+                        "@type": "MenuItem",
+                        "name": `Shrikhand, Puri, Curry, Farsan, Rice, Dal, Butter Milk`,
+                        "image": `${domainName}/images/shrikhand-puri.webp`,
+                        "offers": {
+                            "@type": "Offer",
+                            "price": `40`,
+                            "priceCurrency": "EUR"
+                        }
+                    }
+                }]
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        let produceItemIdJson = (sectionName, itemName, itemUrl, price) => {
+            return {
+                "@type": "MenuSection",
+                "name": `${sectionName}`,
+                "description": "Indian Chaats, Starters",
+                "hasMenuItem": {
+                    "@type": "MenuItem",
+                    "name": `${itemName}`,
+                    "image": itemUrl != null ? `${domainName}${itemUrl.replace('./', '/')}` : '',
+                    "offers": {
+                        "@type": "Offer",
+                        "price": `${price}`,
+                        "priceCurrency": "EUR"
+                    }
+                }
+            };
+        };
         var chaats = [{
             name: "Punjabi Samosa (3pcs)",
             img: './images/punjabi-samosa.webp',
@@ -305,7 +385,7 @@
         {
             name: "Panner Bhurji",
             price: 12
-        },        
+        },
         {
             name: "Mix Vegetable Gravy",
             price: 12
@@ -421,29 +501,28 @@
             price: 10
         }];
 
-
         var desserts = [{
-            name: "Gulab Jamun",
+            name: "Gulab Jamun (3pcs)",
             img: './images/gulab-jamun.jpg',
-            price: 10,
+            price: 5,
             description: 'The name "Gulab Jamun" comes from two words: "Gulab," which means rose in Hindi, and "Jamun," which is a small fruit that is similar in size and shape to the dessert. Interestingly Gulab Jamun is that it is said to have originated in Persia and was brought to India by the Mughal emperors who ruled the country in the 16th century'
         },
         {
             name: "Gajar Ka Halwa",
             img: './images/gajar-halwa.jpg',
-            price: 10,
+            price: 5,
             description: 'Gajar ka Halwa is a traditional Indian dessert that is made with grated carrots, milk, sugar, ghee (clarified butter), and nuts. Gajar ka Halwa is not only popular in India but also in other parts of the world. In fact, it is a popular dessert in many Middle Eastern and South Asian countries, and it is also gaining popularity in Western countries like the United States and the United Kingdom.'
         },
         {
             name: "Lassi",
             img: './images/Lassi.jpg',
-            price: 10,
+            price: 5,
             description: 'Lassi is a popular traditional yogurt-based drink from the Indian subcontinent, known for its refreshing taste and numerous health benefits. The World Record for the largest lassi was set in 2017 in India, weighing over 9,000 kilograms and made with over 7,000 liters of yogurt, 2,000 liters of milk, and 1,000 kilograms of sugar.'
         },
         {
             name: "Jalebi",
             img: './images/jalebi.jpg',
-            price: 10,
+            price: 5,
             description: 'Jalebi is a popular sweet dessert in India, Pakistan, Bangladesh, and other countries in South Asia and the Middle East. Jalebi is not only a delicious dessert but also has some health benefits. It is rich in carbohydrates, vitamin B, and iron, which can boost energy levels and improve blood circulation. The worlds largest Jalebi was made in India in 2016, weighing over 15 kilograms.'
         }];
 
@@ -456,39 +535,39 @@
             price: 10
         },
         {
-            name: "Dhokla yellow/white",
+            name: "Dhokla yellow/white (500gm)",
             price: 10
         },
         {
-            name: "Handvo",
+            name: "Handvo (500gm)",
             price: 10
         },
         {
-            name: "Surti Locho",
+            name: "Surti Locho (500gm)",
             price: 10
         },
         {
-            name: "Surti Khaman",
+            name: "Surti Khaman (500gm)",
             price: 10
         },
         {
-            name: "Patudi",
-            price: 10
+            name: "Patudi (250gm)",
+            price: 5
         },
         {
-            name: "Methi Puri",
-            price: 10
+            name: "Methi Puri (500gm)",
+            price: 7
         },
         {
-            name: "Menda Puri",
-            price: 10
+            name: "Menda Puri (500gm)",
+            price: 7
         },
         {
-            name: "Sakarpare",
-            price: 10
+            name: "Sakarpare (500gm)",
+            price: 7
         },
         {
-            name: "Khakhara",
+            name: "Khakhara (500gm)",
             price: 10
         }];
 
@@ -504,6 +583,7 @@
                                             </div>
                                         </div>
                                     </div>`);
+                richTextContent.hasMenu.hasMenuSection.push(produceItemIdJson('SIZZLING CHAATS', item.name, item.img, item.price));
             });
 
             let $northCurries = $(".main-course-north-indian-items");
@@ -514,6 +594,7 @@
                                 €${item.price}
                             </div>
                         </div>`);
+                richTextContent.hasMenu.hasMenuSection.push(produceItemIdJson('NORTH INDIAN CURRIES', item.name, null, item.price));
             });
 
             let $southFeasts = $(".main-course-south-indian-items");
@@ -524,6 +605,7 @@
                                 €${item.price}
                             </div>
                         </div>`);
+                richTextContent.hasMenu.hasMenuSection.push(produceItemIdJson('SOUTH INDIAN FEASTS', item.name, null, item.price));
             });
 
             let $specialDishes = $(".special-items");
@@ -534,13 +616,13 @@
                                 €${item.price}
                             </div>
                         </div>`);
+                richTextContent.hasMenu.hasMenuSection.push(produceItemIdJson('SPECIAL DISHES', item.name, null, item.price));
             });
-
-
 
             let $dessertItems = $(".desserts-items");
             let i = 0;
             desserts.forEach(item => {
+                richTextContent.hasMenu.hasMenuSection.push(produceItemIdJson('DESSERTS', item.name, item.img, item.price, item.description));
                 if (i % 2 == 0) {
                     $dessertItems.append(`<div class="row desserts-item mt-sm-20 ">
                             <div class="col-md-6">
@@ -574,6 +656,7 @@
 
             let $snacksItems = $(".snacks-items");
             snacks.forEach(item => {
+                richTextContent.hasMenu.hasMenuSection.push(produceItemIdJson('YUMMY SNACKS', item.name, null, item.price));
                 $snacksItems.append(`<div class="row snacks-item">
                             <div class="col-md-7 col-sm-8 col-8">${item.name}</div>
                             <div class="col-md-5 col-sm-4 col-4 text-right">
@@ -581,6 +664,11 @@
                             </div>
                         </div>`);
             });
+
+            const script = document.createElement('script');
+            script.setAttribute('type', 'application/ld+json');
+            script.textContent = JSON.stringify(richTextContent);
+            document.body.appendChild(script);
         });
     </script>
 </body>
