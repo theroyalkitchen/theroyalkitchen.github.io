@@ -1,7 +1,7 @@
 {
     "short_name": "The Royal Kitchen",
     "name": "The Royal Kitchen",
-    "description":"Serving authentic Indian food in Madrid. ",
+    "description":"Serving authentic Indian food in Madrid.",
     "icons": [
       {
         "src": "images/logo64.png",
@@ -20,8 +20,7 @@
         "purpose":"any"
       }
     ],
-    "start_url": ".",
-    
+    "start_url": ".",    
     "display": "standalone",
     "display_override": [
       "standalone",
