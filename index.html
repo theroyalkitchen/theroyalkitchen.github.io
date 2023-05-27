@@ -760,7 +760,8 @@
                     }
                 });
             }
-
+        });
+        function showAppInstallDialog() {
             if (!window.matchMedia('(display-mode: fullscreen)').matches
                 && !window.matchMedia('(display-mode: standalone)').matches
                 && window.deferredInstallPrompt) {
@@ -770,10 +771,10 @@
                     const { outcome } = await window.deferredInstallPrompt.userChoice;
                     window.deferredInstallPrompt = null;
                     if (outcome === 'accepted') {
-                        gtag('send','event','General','Install','AppInstalled');
+                        gtag('send', 'event', 'General', 'Install', 'AppInstalled');
                         console.log('App Installed.');
                     } else if (outcome === 'dismissed') {
-                        gtag('send','event','General','Install','AppNotInstalled');
+                        gtag('send', 'event', 'General', 'Install', 'AppNotInstalled');
                         console.log('App Not Installed');
                     }
                     window.deferredInstallPrompt = null;
@@ -784,10 +785,6 @@
 
                 installDialog.show();
             }
-
-        });
-        function logAppEvent(eventName){
-            
         }
     </script>
     <!-- Google tag (gtag.js) -->
@@ -813,6 +810,7 @@
             // can have buttons in different locations, or wait to prompt
             // as part of a critical journey.
             console.log('beforeinstallprompt');
+            showAppInstallDialog();
         });
 
     </script>
