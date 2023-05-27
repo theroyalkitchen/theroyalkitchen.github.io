@@ -772,23 +772,19 @@
                     console.log('App Not Installed');
                 }
                 window.deferredInstallPrompt = null;
-                var installDialogElement = document.getElementById('installDialog');
-                var installDialog = new bootstrap.Modal(installDialogElement, {
-                    keyboard: false
-                });
-
-                installDialog.hide();
+                if (installDialog)
+                    installDialog.hide();
             });
         });
+        var installDialog;
         function showAppInstallDialog() {
             if (!window.matchMedia('(display-mode: fullscreen)').matches
                 && !window.matchMedia('(display-mode: standalone)').matches
                 && window.deferredInstallPrompt) {
                 var installDialogElement = document.getElementById('installDialog');
-                var installDialog = new bootstrap.Modal(installDialogElement, {
+                installDialog = new bootstrap.Modal(installDialogElement, {
                     keyboard: false
                 });
-
                 installDialog.show();
             }
         }
