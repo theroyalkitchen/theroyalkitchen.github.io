@@ -772,6 +772,12 @@
                     console.log('App Not Installed');
                 }
                 window.deferredInstallPrompt = null;
+                var installDialogElement = document.getElementById('installDialog');
+                var installDialog = new bootstrap.Modal(installDialogElement, {
+                    keyboard: false
+                });
+
+                installDialog.hide();
             });
         });
         function showAppInstallDialog() {
