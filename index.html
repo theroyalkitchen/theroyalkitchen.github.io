@@ -760,29 +760,27 @@
                     }
                 });
             }
+            $('#btn-Install').click(async (e) => {
+                window.deferredInstallPrompt.prompt();
+                const { outcome } = await window.deferredInstallPrompt.userChoice;
+                window.deferredInstallPrompt = null;
+                if (outcome === 'accepted') {
+                    gtag('send', 'event', 'General', 'Install', 'AppInstalled');
+                    console.log('App Installed.');
+                } else if (outcome === 'dismissed') {
+                    gtag('send', 'event', 'General', 'Install', 'AppNotInstalled');
+                    console.log('App Not Installed');
+                }
+                window.deferredInstallPrompt = null;
+            });
         });
         function showAppInstallDialog() {
             if (!window.matchMedia('(display-mode: fullscreen)').matches
                 && !window.matchMedia('(display-mode: standalone)').matches
                 && window.deferredInstallPrompt) {
-                var installDialogElement = document.getElementById('installDialog');
-                installDialogElement.addEventListener('hidden.bs.modal', async (event) => {
-                    window.deferredInstallPrompt.prompt();
-                    const { outcome } = await window.deferredInstallPrompt.userChoice;
-                    window.deferredInstallPrompt = null;
-                    if (outcome === 'accepted') {
-                        gtag('send', 'event', 'General', 'Install', 'AppInstalled');
-                        console.log('App Installed.');
-                    } else if (outcome === 'dismissed') {
-                        gtag('send', 'event', 'General', 'Install', 'AppNotInstalled');
-                        console.log('App Not Installed');
-                    }
-                    window.deferredInstallPrompt = null;
-                });
                 var installDialog = new bootstrap.Modal(installDialogElement, {
                     keyboard: false
                 });
-
                 installDialog.show();
             }
         }
