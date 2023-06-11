@@ -126,7 +126,8 @@ h3 {
 .desserts,
 .main-course,
 .special-dishes,
-.royal-dishes {
+.royal-dishes,
+.party {
     padding: 30px 0px;
 }
 
@@ -308,4 +309,24 @@ footer {
 
 .btn-primary {
     background: #94662f;
+}
+
+.party {
+    background-image: url(../images/party_lg.png);
+    background-repeat: repeat-x;
+    background-color: #151515;
+    background-size: contain;
+}
+
+.party h1,
+.party h2,
+.party h3 {
+    display: block; 
+}
+
+.party h1{
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
 }
